@@ -259,11 +259,11 @@ importers:
         specifier: 4.9.5
         version: 4.9.5
       vite:
-        specifier: 3.2.5
-        version: 3.2.5(@types/node@18.15.11)
+        specifier: ^3.2.6
+        version: 3.2.6(@types/node@18.15.11)
       vite-plugin-solid:
         specifier: 2.7.0
-        version: 2.7.0(solid-js@1.7.3)(vite@3.2.5)
+        version: 2.7.0(solid-js@1.7.3)(vite@3.2.6)
 
   packages/core:
     dependencies:
@@ -10390,25 +10390,6 @@ packages:
       - rollup
       - supports-color
 
-  /vite-plugin-solid@2.7.0(solid-js@1.7.3)(vite@3.2.5):
-    resolution: {integrity: sha512-avp/Jl5zOp/Itfo67xtDB2O61U7idviaIp4mLsjhCa13PjKNasz+IID0jYTyqUp9SFx6/PmBr6v4KgDppqompg==}
-    peerDependencies:
-      solid-js: ^1.7.2
-      vite: ^3.0.0 || ^4.0.0
-    dependencies:
-      '@babel/core': 7.21.4
-      '@babel/preset-typescript': 7.21.4(@babel/core@7.21.4)
-      '@types/babel__core': 7.20.0
-      babel-preset-solid: 1.7.3(@babel/core@7.21.4)
-      merge-anything: 5.1.5
-      solid-js: 1.7.3
-      solid-refresh: 0.5.2(solid-js@1.7.3)
-      vite: 3.2.5(@types/node@18.15.11)
-      vitefu: 0.2.4(vite@3.2.5)
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /vite-plugin-solid@2.7.0(solid-js@1.7.3)(vite@3.2.6):
     resolution: {integrity: sha512-avp/Jl5zOp/Itfo67xtDB2O61U7idviaIp4mLsjhCa13PjKNasz+IID0jYTyqUp9SFx6/PmBr6v4KgDppqompg==}
     peerDependencies:
@@ -10426,40 +10407,6 @@ packages:
       vitefu: 0.2.4(vite@3.2.6)
     transitivePeerDependencies:
       - supports-color
-
-  /vite@3.2.5(@types/node@18.15.11):
-    resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      '@types/node': 18.15.11
-      esbuild: 0.15.18
-      postcss: 8.4.21
-      resolve: 1.22.2
-      rollup: 2.79.1
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
 
   /vite@3.2.6(@types/node@18.15.11):
     resolution: {integrity: sha512-nTXTxYVvaQNLoW5BQ8PNNQ3lPia57gzsQU/Khv+JvzKPku8kNZL6NMUR/qwXhMG6E+g1idqEPanomJ+VZgixEg==}
@@ -10493,17 +10440,6 @@ packages:
       rollup: 2.79.1
     optionalDependencies:
       fsevents: 2.3.2
-
-  /vitefu@0.2.4(vite@3.2.5):
-    resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
-    peerDependencies:
-      vite: ^3.0.0 || ^4.0.0
-    peerDependenciesMeta:
-      vite:
-        optional: true
-    dependencies:
-      vite: 3.2.5(@types/node@18.15.11)
-    dev: true
 
   /vitefu@0.2.4(vite@3.2.6):
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
