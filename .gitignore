@@ -1,4 +1,7 @@
+# experimental
+pnpm-lock.yaml
 
+# typical
 node_modules
 build
 dist
