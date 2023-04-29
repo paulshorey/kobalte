@@ -26,6 +26,7 @@
     "dev:playground": "pnpm -F @kobalte/playground dev",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
     "prepare": "husky install",
+    "save": "git add . && git-cz && git push",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck"
   },
