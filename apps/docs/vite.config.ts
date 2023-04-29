@@ -9,7 +9,7 @@ import remarkGfm from "remark-gfm";
 import remarkShikiTwoslash from "remark-shiki-twoslash";
 import solid from "solid-start/vite";
 // @ts-ignore
-import netlify from "solid-start-netlify";
+// import netlify from "solid-start-netlify";
 // @ts-ignore
 import node from "solid-start-node";
 import { visit } from "unist-util-visit";
@@ -202,7 +202,7 @@ async function mdx(config: any) {
 
 ///
 
-const adapter = process.env.GITHUB_ACTIONS ? node() : netlify();
+// const adapter = process.env.GITHUB_ACTIONS ? node() : netlify();
 
 export default defineConfig({
   plugins: [
@@ -211,7 +211,7 @@ export default defineConfig({
       rehypePlugins: [rehypePrettyCode],
       remarkPlugins: [remarkGfm],
     }),
-    solid({ adapter, extensions: [".mdx", ".md"] }),
+    solid({ adapter: node(), extensions: [".mdx", ".md"] }),
   ],
   ssr: {
     noExternal: ["@kobalte/core", "@tanstack/solid-virtual"],
