@@ -11,7 +11,7 @@ import solid from "solid-start/vite";
 // @ts-ignore
 // import netlify from "solid-start-netlify";
 // @ts-ignore
-import node from "solid-start-node";
+// import node from "solid-start-node";
 import { visit } from "unist-util-visit";
 import { defineConfig } from "vite";
 
@@ -211,7 +211,7 @@ export default defineConfig({
       rehypePlugins: [rehypePrettyCode],
       remarkPlugins: [remarkGfm],
     }),
-    solid({ adapter: node(), extensions: [".mdx", ".md"] }),
+    solid({ extensions: [".mdx", ".md"] }),
   ],
   ssr: {
     noExternal: ["@kobalte/core", "@tanstack/solid-virtual"],
